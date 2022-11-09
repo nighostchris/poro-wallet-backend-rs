@@ -1,0 +1,13 @@
+[package]
+name = "poro_wallet_backend_rs"
+version = "0.1.0"
+authors = ["Chris Liu <chrisliupascal@gmail.com>"]
+edition = "2021"
+description = "Rust version of poro-wallet-backend"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+actix-web = "4.2.1"
+dotenvy = "0.15.6"
+sqlx = { version = "0.6.2", features = ["postgres", "runtime-actix-native-tls"] }

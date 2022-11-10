@@ -9,5 +9,8 @@ license = "MIT"
 
 [dependencies]
 actix-web = "4.2.1"
+chrono = "0.4.22"
 dotenvy = "0.15.6"
+env_logger = "0.9.3"
+log = "0.4.17"
 sqlx = { version = "0.6.2", features = ["postgres", "runtime-actix-native-tls"] }

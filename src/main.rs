@@ -1,12 +1,6 @@
-use dotenvy::dotenv;
-
-fn load_env_vars() {
-    match dotenv() {
-        Ok(_) => println!("Successfully loaded environment variables."),
-        Err(_) => panic!("Failed to load environment variables from '.env' file."),
-    }
-}
+mod init;
 
 fn main() {
-    load_env_vars();
+    init::load_env_vars();
+    init::init_logger();
 }
